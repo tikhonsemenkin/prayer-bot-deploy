@@ -75,4 +75,4 @@ if __name__ == "__main__":
     remove_expired_prayers()
     import asyncio
     # Не используем asyncio.run(), чтобы избежать конфликта с уже запущенным циклом событий
-    asyncio.create_task(main())
+    asyncio.run(main())
